@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake</title>
+	<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+			text-align: center;
+			font-family: Arial, sans-serif;
+        }
+		#canvas {
+			display: inline-block;
+		}
+		div {
+			position: absolute;
+			display: none;
+			top: 225px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			cursor: default;
+		}
+		h1 {
+			margin: 0;
+		}
+    </style>
+</head>
+<body>
+<div id="game-over">
+	<h1>Game over!</h1>
+	<h1 id="score">Score:</1>
+	<h1 id="high-score">HiScore:</1>
+</div>
+<canvas id="canvas" style="background-color: black;"></canvas>
+<script src="game.js"></script>
+</body>
+</html>
